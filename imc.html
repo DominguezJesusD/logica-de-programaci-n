@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<h1>Programa Calculo IMC</h1>
+
+<br>
+
+<script>
+
+    function saltarlinea() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+
+    function imprimir(frase) {
+
+        document.write(frase);
+        saltarlinea();
+
+    }
+
+    function calcularImc(peso,altura) {
+        imc = peso / (altura * altura);
+        return imc;
+
+    }
+    
+    var imcjesus = calcularImc(75,1.75);
+    var imcdavid = calcularImc(70,1.80);
+
+    imprimir("El promedio de IMC de Jesus y David es: " + (imcjesus+imcdavid)/2);
+    
+</script>    
